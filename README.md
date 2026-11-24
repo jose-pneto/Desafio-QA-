@@ -22,10 +22,12 @@ Node.js 18 ou superior.
 
 ```bash
 npm install
-npx playwright install chromium
-npm test            # roda os testes (headless)
-npm run test:headed # roda com o navegador visível
-npm run report      # abre o relatório HTML
+npx playwright install                       # baixa os binários dos navegadores onde são executados os testes
+npm init playwright@latest                   # inicia e configura um projeto completo de testes
+npx playwright test                          # roda todos os testes
+npx playwright test --headed                 # roda com o navegador visível
+npx playwright test --ui                     # UI Mode (interativo)
+npx playwright show-report                   # abre o relatório HTML
 ```
 
 ## Usuário de teste
